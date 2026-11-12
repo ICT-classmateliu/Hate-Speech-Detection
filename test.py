@@ -4,10 +4,6 @@
 # 库的import部分 ------------------------------------------------------------
 import nltk
 
-from hanlp_restful import HanLPClient
-
-# auth不填则匿名，zh中文，mul多语种
-
 import sklearn
 
 import pandas as pd
@@ -26,17 +22,6 @@ print('brown中一共有{}个句子'.format(len(brown.sents())))
 # 通过sents()函数查看brown中包含的句子
 print('brown中一共有{}个单词'.format(len(brown.words())))
 # 通过words()函数查看brown中包含的单词
-
-# HanLp库测试部分 ------------------------------------------------------------
-#doc = HanLP.parse('2021年HanLPv2.1为生产环境带来次世代最先进的多语种NLP技术。阿婆主来到北京立方庭参观自然语义科技公司。')
-#doc.pretty_print()
-
-#中文分词 细粒度分词
-#HanLP('商品和服务。阿婆主来到北京立方庭参观自然语义科技公司。', tasks='tok').pretty_print()
-
-#粗粒度分词
-#HanLP('阿婆主来到北京立方庭参观自然语义科技公司。', tasks='tok/coarse').pretty_print()
-#fine为细分，coarse为粗分
 
 # sklearn库测试部分 ------------------------------------------------------------
 print(sklearn.__version__)
