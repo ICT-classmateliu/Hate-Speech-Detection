@@ -67,6 +67,8 @@
 - string
 - json
 
+其中 `re`、`string` 和 `json` 是 Python 标准库模块，无需通过 pip 单独安装。
+
 ## 词典和词汇表 ##
 - 仇恨言论词典 `hatebase_dict.csv`
 <br/>用于对推文进行采样，来自 https://www.hatebase.org/ 的原始词典。虽然该词典可以实现较高的召回率，但由于其中包含许多通常不会以冒犯或仇恨方式使用的词语（例如 yellow、oreo、bird），因此其误报率也较高
